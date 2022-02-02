@@ -1,0 +1,32 @@
+CREATE TABLE Sellers (
+    s_id number(10) NOT NULL ,
+    s_name varchar2(20) NOT NULL,
+    s_address varchar2(20) NOT NULL,
+    services varchar2(20) NOT NULL,
+    s_email varchar2(20) NOT NULL,
+    primary key(s_id)
+);
+
+
+
+
+CREATE TABLE Products (
+  p_id number(10) NOT NULL,
+  p_name varchar2(20) NOT NULL,
+  p_price number(10) NOT NULL,
+  p_qty number(10) NOT NULL,
+  p_desc varchar2(20) NOT NULL,
+ primary key(p_id)
+);
+
+
+
+CREATE TABLE Customers (
+  c_id number(10) NOT NULL,
+  first_name varchar2(20) NOT NULL,
+  last_name varchar2(20) NOT NULL,
+  email varchar2(20) NOT NULL,
+  mobile varchar2(10) NOT NULL,
+  address varchar2(20) NOT NULL,
+ primary key(c_id)
+);
